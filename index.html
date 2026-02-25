@@ -13,17 +13,16 @@
     
     <!-- CSS Styles -->
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/normalize.css">
     <script type="module" src="js/main.js"></script>
 
     <title>Portfolio Web - Aldair Rutte</title>
 </head>
 <body>
     <header class="main-header">
-        <div class="hero">
-            <div class="hero__img">
-            <p id="work">Open to Work</p>
+        <p id="work">Open to Work</p>
             
-            <div class="container__header">
+        <div class="container__header">
 
                 <a href="#" id="logo__link">
                     <svg class="hexagon" 
@@ -45,20 +44,26 @@
                 </button>
 
                 <a href="#contact__me" class="btn" id="nav__contact">Contact Me</a>
-            </div>
-            <nav class="navigation">
+        </div>
+
+        <nav class="navigation">
                         <a href="#about__me">About Me</a>
                         <a href="#main__stack">Main Stack</a>
                         <a href="#projects">Projects</a>
                         <a href="#education">Education</a>
-            </nav>
+        </nav>
 
-            <div class="hero__content">
-                    <h1>Hola! Soy Aldair Rutte Bazán</h1>
-                    <h2>- Web Developer</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis eius nostrum animi alias asperiores molestiae consequatur recusandae necessitatibus quis. Ab distinctio ullam pariatur quae nulla nam culpa fuga beatae minima.</p>
-            </div>
-            </div>
+        <div class="header__content">
+            <h1>Hola! Soy Aldair Rutte Bazán</h1>
+            <ul class="list__social">
+                <li><a href="https://github.com/DedSec76" target="_blank"><figure><img src="assets/logos/github-link.png" alt=""></figure></a></li>
+                <li><a href="https://www.linkedin.com/in/aldair-rutte-bazan-87b2b730b" target="_blank"><figure><img src="assets/logos/linkedin.png" alt=""></figure></a></li>
+                <li><a href="https://www.tiktok.com/@dedkaizen" target="_blank"><figure><img src="assets/logos/tik-tok.png" alt=""></figure></a></li>
+            </ul>
+            <h2>- Web Developer</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis eius nostrum animi alias asperiores molestiae consequatur recusandae necessitatibus quis. Ab distinctio ullam pariatur quae nulla nam culpa fuga beatae minima.</p>
+        
+            <a href="assets/C.V.Aldair-Rutte-Web-Developer.pdf" class="btn btn_download" download>Download CV</a>
         </div>
     </header>
 
@@ -197,19 +202,18 @@
             <h2>Contact Me</h2>
 
             <form>
-                <input type="text" placeholder="Full Name">
-                <input type="email" placeholder="E-mail">
-                <textarea placeholder="Message"></textarea>
+                <input type="text" id="name" placeholder="Full Name">
+                <input type="email" id="email" placeholder="E-mail">
+                <textarea id="message" placeholder="Message"></textarea>
 
-                <button type="submit">Send Message</button>
+                <button class="btn" type="submit">Send Message</button>
             </form>
         </section>
         <section class="footer__icons">
-            <ul>
-                <li>Linkedin</li>
-                <li>TikTok</li>
-                <li>Computrabajo</li>
-                <li>Bumeran</li>
+            <ul class="list__social">
+                <li><a href="https://github.com/DedSec76" target="_blank"><figure><img src="assets/logos/github-link.png" alt=""></figure></a></li>
+                <li><a href="https://www.linkedin.com/in/aldair-rutte-bazan-87b2b730b" target="_blank"><figure><img src="assets/logos/linkedin.png" alt=""></figure></a></li>
+                <li><a href="https://www.tiktok.com/@dedkaizen" target="_blank"><figure><img src="assets/logos/tik-tok.png" alt=""></figure></a></li>
             </ul>
         </section>
     </footer>
