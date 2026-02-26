@@ -325,8 +325,19 @@ body {
         background: transparent;
         color: var(--alabaster-grey);
         text-transform: uppercase;
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         margin-top: 1.2rem;
+
+        @media screen and (min-width: 700px) {
+            max-width: 350px;
+            margin: auto;
+        }
+
+        img {
+            margin-right: .5rem;
+        }
 
         &:hover {
             background: linear-gradient(rgba(255, 255, 0, 0.35), rgba(254, 54, 14, 0.65)), var(--accent-color);
