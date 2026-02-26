@@ -24,7 +24,7 @@
             <p id="work">Open to Work</p>
                 
             <div class="container__header">
-
+                <div class="header__top">
                     <a href="#" id="logo__link">
                         <svg class="hexagon" 
                             xmlns="http://www.w3.org/2000/svg"  
@@ -32,7 +32,7 @@
                             fill="currentColor" 
                             stroke="currentColor" 
                             stroke-width="1">
-                                                
+                                                    
                             <path d="M12,24c-.5,0-1-.12-1.46-.37l-7.97-4.27c-.98-.52-1.58-1.54-1.58-2.64V7.26c0-1.11,.61-2.12,1.59-2.65L10.55,.36c.91-.49,1.99-.49,2.9,0l7.96,4.25c.98,.52,1.59,1.54,1.59,2.65v9.46c0,1.11-.61,2.12-1.58,2.64l-7.96,4.27c-.46,.24-.96,.37-1.46,.37Z"/>           
                         </svg>
                         <span id="logo__dedsec">DS</span>
@@ -45,14 +45,15 @@
                     </button>
 
                     <a href="#contact__me" class="btn" id="nav__contact">Contact Me</a>
-            </div>
+                </div>
 
-            <nav class="navigation">
-                <a href="#about__me">About Me</a>
-                <a href="#main__stack">Main Stack</a>
-                <a href="#projects">Projects</a>
-                <a href="#education">Education</a>
-            </nav>
+                <nav class="navigation">
+                    <a href="#about__me">About Me</a>
+                    <a href="#main__stack">Main Stack</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#education">Education</a>
+                </nav>
+            </div>
 
             <div class="header__content">
                 <h1>Hola! Soy Aldair Rutte Bazán</h1>
@@ -74,21 +75,19 @@
 
     <main class="principal">
         <div class="container">
-            <article id="about__me" class="about__me">
-                <div class="about__me__image">
-                    <img src="assets/images/perfil.png" alt="Profile Picture of Aldair Rutte Bazán">
-                </div>
-                <div class="about__me__content">
-                    <h2>About Me</h2>
-                    <p>Software Developer enfocado en crear aplicaciones web funcionales, escalables y orientadas a negocio.
-                    Experiencia desarrollando sistemas completos con integración de pagos, CRUDs en PHP y consumo de APIs REST. Formación en Software Development en BYU–Idaho y experiencia en trabajo colaborativo con Git.
-                    </p>
-                    <ul>
-                        <li>Name: Aldair Rutte Bazán</li>
-                        <li>Date of Birth: 10 April 1999</li>
-                        <li>Nationality: Peruvian</li>
-                    </ul>
-                </div>
+            <article id="projects" class="projects">
+                <h2>Projects</h2>
+                <section class="card_project">
+                    <img src="assets/images/projects/DevwebcampInicio.PNG" alt="project-image">
+                    <h3>Sistema de conferencias con pago en Paypal</h3>
+                    <button class="btn">Details</button>
+                </section>
+                <section class="card_project">
+                    <img src="assets/images/projects/ComparereadyInicio.png" alt="project-image2">
+                    <h3>Comparador de Precios</h3>
+                    <button class="btn">Details</button>
+                </section>
+                <a class="btn btn_more" href="#">More Projects</a>
             </article>
 
             <article id="main__stack" class="main__stack">
@@ -131,21 +130,6 @@
                         <li><figure><img src="assets/logos/powerbi.png" alt="power BI logo"></figure><figcaption>POWER BI</figcaption></li>
                     </ul>
                 </section>
-            </article>
-
-            <article id="projects" class="projects">
-                <h2>Projects</h2>
-                <section class="card_project">
-                    <img src="assets/images/projects/DevwebcampInicio.PNG" alt="project-image">
-                    <h3>Sistema de conferencias con pago en Paypal</h3>
-                    <button class="btn">Details</button>
-                </section>
-                <section class="card_project">
-                    <img src="assets/images/projects/ComparereadyInicio.png" alt="project-image2">
-                    <h3>Comparador de Precios</h3>
-                    <button class="btn">Details</button>
-                </section>
-                <a class="btn btn_more" href="#">More Projects</a>
             </article>
 
             <article id="education" class="education">
@@ -201,6 +185,23 @@
                     </div>
                 </section>
             </article>
+
+            <article id="about__me" class="about__me">
+                <div class="about__me__image">
+                    <img src="assets/images/perfil.png" alt="Profile Picture of Aldair Rutte Bazán">
+                </div>
+                <div class="about__me__content">
+                    <h2>About Me</h2>
+                    <p>Software Developer enfocado en crear aplicaciones web funcionales, escalables y orientadas a negocio.
+                    Experiencia desarrollando sistemas completos con integración de pagos, CRUDs en PHP y consumo de APIs REST. Formación en Software Development en BYU–Idaho y experiencia en trabajo colaborativo con Git.
+                    </p>
+                    <ul>
+                        <li>Name: Aldair Rutte Bazán</li>
+                        <li>Date of Birth: 10 April 1999</li>
+                        <li>Nationality: Peruvian</li>
+                    </ul>
+                </div>
+            </article>
         </div>
     </main>
 
@@ -225,6 +226,11 @@
                 </ul>
             </section>
         </div>
+        <div class="foot">
+            <p>&copy; <span id="year"></span>Diseñado y programado por Aldair Rutte Bazan.</p>
+            <p>Portfolio Web <span id="lastModified"></span></p>
+        </div>
     </footer>
+    
 </body>
 </html>
