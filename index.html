@@ -20,202 +20,211 @@
 </head>
 <body>
     <header class="main-header">
-        <p id="work">Open to Work</p>
+        <div class="container">
+            <p id="work">Open to Work</p>
+                
+            <div class="container__header">
+
+                    <a href="#" id="logo__link">
+                        <svg class="hexagon" 
+                            xmlns="http://www.w3.org/2000/svg"  
+                            viewBox="0 0 24 24" 
+                            fill="currentColor" 
+                            stroke="currentColor" 
+                            stroke-width="1">
+                                                
+                            <path d="M12,24c-.5,0-1-.12-1.46-.37l-7.97-4.27c-.98-.52-1.58-1.54-1.58-2.64V7.26c0-1.11,.61-2.12,1.59-2.65L10.55,.36c.91-.49,1.99-.49,2.9,0l7.96,4.25c.98,.52,1.59,1.54,1.59,2.65v9.46c0,1.11-.61,2.12-1.58,2.64l-7.96,4.27c-.46,.24-.96,.37-1.46,.37Z"/>           
+                        </svg>
+                        <span id="logo__dedsec">DS</span>
+                    </a>
+
+                    <button id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+
+                    <a href="#contact__me" class="btn" id="nav__contact">Contact Me</a>
+            </div>
+
+            <nav class="navigation">
+                <a href="#about__me">About Me</a>
+                <a href="#main__stack">Main Stack</a>
+                <a href="#projects">Projects</a>
+                <a href="#education">Education</a>
+            </nav>
+
+            <div class="header__content">
+                <h1>Hola! Soy Aldair Rutte Bazán</h1>
+                <ul class="list__social">
+                    <li><a href="https://github.com/DedSec76" target="_blank"><figure><img src="assets/logos/github-link.png" alt=""></figure></a></li>
+                    <li><a href="https://www.linkedin.com/in/aldair-rutte-bazan-87b2b730b" target="_blank"><figure><img src="assets/logos/linkedin.png" alt=""></figure></a></li>
+                    <li><a href="https://www.tiktok.com/@dedkaizen" target="_blank"><figure><img src="assets/logos/tik-tok.png" alt=""></figure></a></li>
+                </ul>
+                <p>Tengo 2 años de experiencia desarrollando aplicaciones web, para empresas y proyectos personales. Actualmente
+                me encuentro estudiando Software Development en BYU–Idaho, he participado en trabajos colaborativo mediante Git y metodologías ágiles.
+                </p>
+
+                <h4>- Inglés Intermedio</h4>
             
-        <div class="container__header">
-
-                <a href="#" id="logo__link">
-                    <svg class="hexagon" 
-                        xmlns="http://www.w3.org/2000/svg"  
-                        viewBox="0 0 24 24" 
-                        fill="currentColor" 
-                        stroke="currentColor" 
-                        stroke-width="1">
-                                            
-                        <path d="M12,24c-.5,0-1-.12-1.46-.37l-7.97-4.27c-.98-.52-1.58-1.54-1.58-2.64V7.26c0-1.11,.61-2.12,1.59-2.65L10.55,.36c.91-.49,1.99-.49,2.9,0l7.96,4.25c.98,.52,1.59,1.54,1.59,2.65v9.46c0,1.11-.61,2.12-1.58,2.64l-7.96,4.27c-.46,.24-.96,.37-1.46,.37Z"/>           
-                    </svg>
-                    <span id="logo__dedsec">DS</span>
-                </a>
-
-                <button id="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-
-                <a href="#contact__me" class="btn" id="nav__contact">Contact Me</a>
-        </div>
-
-        <nav class="navigation">
-                        <a href="#about__me">About Me</a>
-                        <a href="#main__stack">Main Stack</a>
-                        <a href="#projects">Projects</a>
-                        <a href="#education">Education</a>
-        </nav>
-
-        <div class="header__content">
-            <h1>Hola! Soy Aldair Rutte Bazán</h1>
-            <ul class="list__social">
-                <li><a href="https://github.com/DedSec76" target="_blank"><figure><img src="assets/logos/github-link.png" alt=""></figure></a></li>
-                <li><a href="https://www.linkedin.com/in/aldair-rutte-bazan-87b2b730b" target="_blank"><figure><img src="assets/logos/linkedin.png" alt=""></figure></a></li>
-                <li><a href="https://www.tiktok.com/@dedkaizen" target="_blank"><figure><img src="assets/logos/tik-tok.png" alt=""></figure></a></li>
-            </ul>
-            <h2>- Web Developer</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis eius nostrum animi alias asperiores molestiae consequatur recusandae necessitatibus quis. Ab distinctio ullam pariatur quae nulla nam culpa fuga beatae minima.</p>
-        
-            <a href="assets/C.V.Aldair-Rutte-Web-Developer.pdf" class="btn btn_download" download>Download CV</a>
+                <a href="assets/C.V.Aldair-Rutte-Web-Developer.pdf" class="btn btn_download" download>Download CV</a>
+            </div>
         </div>
     </header>
 
     <main class="principal">
-        <article id="about__me" class="about__me">
-            <div class="about__me__image">
-                <img src="assets/images/perfil.png" alt="Profile Picture of Aldair Rutte Bazán">
-            </div>
-            <div class="about__me__content">
-                <h2>About Me</h2>
-                <p>Software Developer enfocado en crear aplicaciones web funcionales, escalables y orientadas a negocio.
-                Experiencia desarrollando sistemas completos con integración de pagos, CRUDs en PHP y consumo de APIs REST. Formación en Software Development en BYU–Idaho y experiencia en trabajo colaborativo con Git.
-                </p>
-                <ul>
-                    <li>Name: Aldair Rutte Bazán</li>
-                    <li>Date of Birth: 10 April 1999</li>
-                    <li>Nationality: Peruvian</li>
-                </ul>
-            </div>
-        </article>
+        <div class="container">
+            <article id="about__me" class="about__me">
+                <div class="about__me__image">
+                    <img src="assets/images/perfil.png" alt="Profile Picture of Aldair Rutte Bazán">
+                </div>
+                <div class="about__me__content">
+                    <h2>About Me</h2>
+                    <p>Software Developer enfocado en crear aplicaciones web funcionales, escalables y orientadas a negocio.
+                    Experiencia desarrollando sistemas completos con integración de pagos, CRUDs en PHP y consumo de APIs REST. Formación en Software Development en BYU–Idaho y experiencia en trabajo colaborativo con Git.
+                    </p>
+                    <ul>
+                        <li>Name: Aldair Rutte Bazán</li>
+                        <li>Date of Birth: 10 April 1999</li>
+                        <li>Nationality: Peruvian</li>
+                    </ul>
+                </div>
+            </article>
 
-        <article id="main__stack" class="main__stack">
-            <h2>My Main Stack</h2>
-            <section class="frontend">
-                <h4>Frontend</h4>
-                <ul>
-                    <li><figure><img src="assets/logos/html.png" alt="html logo"></figure><figcaption>HTML</figcaption></li>
-                    <li><figure><img src="assets/logos/css-3.png" alt="css logo"></figure><figcaption>CSS</figcaption></li>
-                    <li><figure><img src="assets/logos/java-script.png" alt="javascript logo"></figure><figcaption>JAVASCRIPT</figcaption></li>
-                </ul>
-            </section>
-            <section class="backend">
-                <h4>Backend</h4>
-                <ul>
-                    <li><figure><img src="assets/logos/php.png" alt="html logo"></figure><figcaption>PHP</figcaption></li>
-                    <li><figure><img src="assets/logos/python.png" alt="html logo"></figure><figcaption>PYTHON</figcaption></li>
-                    <li><figure><img src="assets/logos/c-sharp.png" alt="html logo"></figure><figcaption>C#</figcaption></li>
-                    <li><figure><img src="assets/logos/java.png" alt="html logo"></figure><figcaption>JAVA</figcaption></li>
-                </ul>
-            </section>
-            <section class="others">
-                <h4>Others</h4>
-                <ul>
-                    <li><figure><img src="assets/logos/git.png" alt="git logo"></figure><figcaption>GIT</figcaption></li>
-                    <li><figure><img src="assets/logos/github.png" alt="github logo"></figure><figcaption>GITHUB</figcaption></li>
-                    <li><figure><img src="assets/logos/sql-server.png" alt="html logo"></figure><figcaption>SQL SERVER</figcaption></li>
-                    <li><figure><img src="assets/logos/mysql.png" alt="html logo"></figure><figcaption>MY SQL</figcaption></li>
-                    <li><figure><img src="assets/logos/gulp.png" alt="gulp logo"></figure><figcaption>GULP FILE</figcaption></li>
-                    <li><figure><img src="assets/logos/npm.png" alt="npm logo"></figure><figcaption>NPM NODE</figcaption></li>
-                    <li><figure><img src="assets/logos/kotlin.png" alt="html logo"></figure><figcaption>KOTLIN</figcaption></li>
-                </ul>
-            </section>
-            <section class="office">
-                <h4>Office</h4>
-                <ul>
-                    <li><figure><img src="assets/logos/word.png" alt="word logo"></figure><figcaption>WORD</figcaption></li>
-                    <li><figure><img src="assets/logos/excel.png" alt="excel logo"></figure><figcaption>EXCEL</figcaption></li>
-                    <li><figure><img src="assets/logos/powerpoint.png" alt="word logo"></figure><figcaption>POWERPOINT</figcaption></li>
-                    <li><figure><img src="assets/logos/powerbi.png" alt="power BI logo"></figure><figcaption>POWER BI</figcaption></li>
-                </ul>
-            </section>
-        </article>
+            <article id="main__stack" class="main__stack">
+                <h2>My Main Stack</h2>
+                <section class="frontend">
+                    <h4>Frontend</h4>
+                    <ul>
+                        <li><figure><img src="assets/logos/html.png" alt="html logo"></figure><figcaption>HTML</figcaption></li>
+                        <li><figure><img src="assets/logos/css-3.png" alt="css logo"></figure><figcaption>CSS</figcaption></li>
+                        <li><figure><img src="assets/logos/java-script.png" alt="javascript logo"></figure><figcaption>JAVASCRIPT</figcaption></li>
+                    </ul>
+                </section>
+                <section class="backend">
+                    <h4>Backend</h4>
+                    <ul>
+                        <li><figure><img src="assets/logos/php.png" alt="html logo"></figure><figcaption>PHP</figcaption></li>
+                        <li><figure><img src="assets/logos/python.png" alt="html logo"></figure><figcaption>PYTHON</figcaption></li>
+                        <li><figure><img src="assets/logos/c-sharp.png" alt="html logo"></figure><figcaption>C#</figcaption></li>
+                        <li><figure><img src="assets/logos/java.png" alt="html logo"></figure><figcaption>JAVA</figcaption></li>
+                    </ul>
+                </section>
+                <section class="others">
+                    <h4>Others</h4>
+                    <ul>
+                        <li><figure><img src="assets/logos/git.png" alt="git logo"></figure><figcaption>GIT</figcaption></li>
+                        <li><figure><img src="assets/logos/github.png" alt="github logo"></figure><figcaption>GITHUB</figcaption></li>
+                        <li><figure><img src="assets/logos/sql-server.png" alt="html logo"></figure><figcaption>SQL SERVER</figcaption></li>
+                        <li><figure><img src="assets/logos/mysql.png" alt="html logo"></figure><figcaption>MY SQL</figcaption></li>
+                        <li><figure><img src="assets/logos/gulp.png" alt="gulp logo"></figure><figcaption>GULP FILE</figcaption></li>
+                        <li><figure><img src="assets/logos/npm.png" alt="npm logo"></figure><figcaption>NPM NODE</figcaption></li>
+                        <li><figure><img src="assets/logos/kotlin.png" alt="html logo"></figure><figcaption>KOTLIN</figcaption></li>
+                    </ul>
+                </section>
+                <section class="office">
+                    <h4>Office</h4>
+                    <ul>
+                        <li><figure><img src="assets/logos/word.png" alt="word logo"></figure><figcaption>WORD</figcaption></li>
+                        <li><figure><img src="assets/logos/excel.png" alt="excel logo"></figure><figcaption>EXCEL</figcaption></li>
+                        <li><figure><img src="assets/logos/powerpoint.png" alt="word logo"></figure><figcaption>POWERPOINT</figcaption></li>
+                        <li><figure><img src="assets/logos/powerbi.png" alt="power BI logo"></figure><figcaption>POWER BI</figcaption></li>
+                    </ul>
+                </section>
+            </article>
 
-        <article id="projects" class="projects">
-            <h2>Projects</h2>
-            <section class="card_project">
-                <img src="assets/images/projects/DevwebcampInicio.PNG" alt="project-image">
-                <h3>Sistema de conferencias con pago en Paypal</h3>
-                <button class="btn">Details</button>
-            </section>
-            <section class="card_project">
-                <img src="assets/images/projects/ComparereadyInicio.png" alt="project-image2">
-                <h3>Comparador de Precios</h3>
-                <button class="btn">Details</button>
-            </section>
-            <a class="btn btn_more" href="#">More Projects</a>
-        </article>
+            <article id="projects" class="projects">
+                <h2>Projects</h2>
+                <section class="card_project">
+                    <img src="assets/images/projects/DevwebcampInicio.PNG" alt="project-image">
+                    <h3>Sistema de conferencias con pago en Paypal</h3>
+                    <button class="btn">Details</button>
+                </section>
+                <section class="card_project">
+                    <img src="assets/images/projects/ComparereadyInicio.png" alt="project-image2">
+                    <h3>Comparador de Precios</h3>
+                    <button class="btn">Details</button>
+                </section>
+                <a class="btn btn_more" href="#">More Projects</a>
+            </article>
 
-        <article id="education" class="education">
-            <h2>Education</h2>
+            <article id="education" class="education">
+                <h2>Education</h2>
 
-            <section class="education__current">
-                <div class="side__left">
-                    <h4>Software Development</h4>
-                    <p>October 2024 - Currently | BYU</p>
-                </div>
-                <div class="timeline">
-                    <img class="imgeducation" src="assets/logos/education.png" alt="">
-                    <img src="assets/logos/rec.png" alt="">
-                </div>
-                <div class="side__right">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis enim, pariatur unde dignissimos obcaecati doloribus veniam cum aut laudantium magni deleniti et, explicabo ratione sequi eos minima culpa non temporibus.</p>
-                </div>
-            </section>
-            <section class="education__past">
-                <div class="side__left">
-                    <h4>Networks and Connectivity</h4>
-                    <p>July 2025 - September 2025 | Fundet</p>
-                </div>
-                <div class="timeline">
-                    <img src="assets/logos/rec.png" alt="">
-                </div>
-                <div class="side__right">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis enim, pariatur unde dignissimos obcaecati doloribus veniam cum aut laudantium magni deleniti et, explicabo ratione sequi eos minima culpa non temporibus.</p>
-                </div>
-            </section>
-            <section class="education__ancestor">
-                <div class="side__left">
-                    <h4>Software Engineer</h4>
-                    <p>April 2017 - October 2021 (truncated) | University Cesar Vallejo</p>
-                </div>
-                <div class="timeline">
-                    <img src="assets/logos/rec.png" alt="">
-                </div>
-                <div class="side__right">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis enim, pariatur unde dignissimos obcaecati doloribus veniam cum aut laudantium magni deleniti et, explicabo ratione sequi eos minima culpa non temporibus.</p>
-                </div>
-            </section>
-            <section class="education__beancestor">
-                <div class="side__left">
-                    <h4>Computer Assembly</h4>
-                    <p>March 2015 - October 2015 | Catolica Institute</p>
-                </div>
-                <div class="timeline">
-                    <img src="assets/logos/rec.png" alt="">
-                </div>
-                <div class="side__right">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis enim, pariatur unde dignissimos obcaecati doloribus veniam cum aut laudantium magni deleniti et, explicabo ratione sequi eos minima culpa non temporibus.</p>
-                </div>
-            </section>
-        </article>
+                <section class="education__current">
+                    <div class="side__left">
+                        <h4>Software Development</h4>
+                        <p>October 2024 - Currently | BYU</p>
+                    </div>
+                    <div class="timeline">
+                        <img class="imgeducation" src="assets/logos/education.png" alt="">
+                        <img src="assets/logos/rec.png" alt="">
+                    </div>
+                    <div class="side__right">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis enim, pariatur unde dignissimos obcaecati doloribus veniam cum aut laudantium magni deleniti et, explicabo ratione sequi eos minima culpa non temporibus.</p>
+                    </div>
+                </section>
+                <section class="education__past">
+                    <div class="side__left">
+                        <h4>Networks and Connectivity</h4>
+                        <p>July 2025 - September 2025 | Fundet</p>
+                    </div>
+                    <div class="timeline">
+                        <img src="assets/logos/rec.png" alt="">
+                    </div>
+                    <div class="side__right">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis enim, pariatur unde dignissimos obcaecati doloribus veniam cum aut laudantium magni deleniti et, explicabo ratione sequi eos minima culpa non temporibus.</p>
+                    </div>
+                </section>
+                <section class="education__ancestor">
+                    <div class="side__left">
+                        <h4>Software Engineer</h4>
+                        <p>April 2017 - October 2021 (truncated) | University Cesar Vallejo</p>
+                    </div>
+                    <div class="timeline">
+                        <img src="assets/logos/rec.png" alt="">
+                    </div>
+                    <div class="side__right">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis enim, pariatur unde dignissimos obcaecati doloribus veniam cum aut laudantium magni deleniti et, explicabo ratione sequi eos minima culpa non temporibus.</p>
+                    </div>
+                </section>
+                <section class="education__beancestor">
+                    <div class="side__left">
+                        <h4>Computer Assembly</h4>
+                        <p>March 2015 - October 2015 | Catolica Institute</p>
+                    </div>
+                    <div class="timeline">
+                        <img src="assets/logos/rec.png" alt="">
+                    </div>
+                    <div class="side__right">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis enim, pariatur unde dignissimos obcaecati doloribus veniam cum aut laudantium magni deleniti et, explicabo ratione sequi eos minima culpa non temporibus.</p>
+                    </div>
+                </section>
+            </article>
+        </div>
     </main>
 
     <footer class="main-footer">
-        <section class="contact__me" id="contact__me">
-            <h2>Contact Me</h2>
+        <div class="container">
+            <section class="contact__me" id="contact__me">
+                <h2>Contact Me</h2>
 
-            <form>
-                <input type="text" id="name" placeholder="Full Name">
-                <input type="email" id="email" placeholder="E-mail">
-                <textarea id="message" placeholder="Message"></textarea>
+                <form>
+                    <input type="text" id="name" placeholder="Full Name">
+                    <input type="email" id="email" placeholder="E-mail">
+                    <textarea id="message" placeholder="Message"></textarea>
 
-                <button class="btn" type="submit">Send Message</button>
-            </form>
-        </section>
-        <section class="footer__icons">
-            <ul class="list__social">
-                <li><a href="https://github.com/DedSec76" target="_blank"><figure><img src="assets/logos/github-link.png" alt=""></figure></a></li>
-                <li><a href="https://www.linkedin.com/in/aldair-rutte-bazan-87b2b730b" target="_blank"><figure><img src="assets/logos/linkedin.png" alt=""></figure></a></li>
-                <li><a href="https://www.tiktok.com/@dedkaizen" target="_blank"><figure><img src="assets/logos/tik-tok.png" alt=""></figure></a></li>
-            </ul>
-        </section>
+                    <button class="btn" type="submit">Send Message</button>
+                </form>
+            </section>
+            <section class="footer__icons">
+                <ul class="list__social">
+                    <li><a href="https://github.com/DedSec76" target="_blank"><figure><img src="assets/logos/github-link.png" alt=""></figure></a></li>
+                    <li><a href="https://www.linkedin.com/in/aldair-rutte-bazan-87b2b730b" target="_blank"><figure><img src="assets/logos/linkedin.png" alt=""></figure></a></li>
+                    <li><a href="https://www.tiktok.com/@dedkaizen" target="_blank"><figure><img src="assets/logos/tik-tok.png" alt=""></figure></a></li>
+                </ul>
+            </section>
+        </div>
     </footer>
 </body>
 </html>

@@ -85,15 +85,21 @@ body {
 .main-header {
     padding-top: .4rem;
     position: relative;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(../assets/images/programing-background.webp);
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url(../assets/images/programing-background.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
 #work {
     color: var(--alabaster-grey);
-    margin: 0 .6rem 0;
+    margin: 0 2.5rem 0;
     font-size: .8rem;
     font-style: oblique;
 
@@ -242,7 +248,7 @@ body {
 
 .header__content {
     margin-top: 1.7rem;
-    padding: 1rem 2rem 1.5rem;
+    padding: 1rem 2.5rem 1.5rem;
     text-align: center;
 
     h1 {
@@ -251,7 +257,7 @@ body {
     }
 
     .list__social {
-        padding: 1.5rem 1rem 2.5rem 0;
+        padding: 1.5rem 0;
         justify-content: flex-start;
 
         img {
@@ -261,18 +267,18 @@ body {
         }
     }
 
-    h2 {
-        letter-spacing: -0.5px;
-        text-align: left;
-        color: var(--background-body);
-        margin-bottom: 1rem;
-    }
-
     p {
-        margin-top: 1.2rem;
+        margin-bottom: 1.5rem;
         text-align: left;
         color: var(--alabaster-grey);
         max-width: 600px;
+    }
+
+    h4 {
+        letter-spacing: -0.2px;
+        text-align: left;
+        color: var(--background-body);
+        margin-bottom: 1.5rem;
     }
 
     .btn_download {
@@ -297,7 +303,7 @@ body {
 .principal {
 
     article {
-        padding: 2rem 1.5rem;
+        padding: 2rem 2.5rem;
     }
 }
 
