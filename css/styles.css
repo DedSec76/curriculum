@@ -119,6 +119,15 @@ body {
 }
 
 .container__header {
+    position: fixed;
+    top: 1.5rem;
+    left: 35%;
+    transform: translateX(-35%);
+    width: 90%;
+    height: 90px;
+    z-index: 1000;
+    
+
     margin-top: 1rem;
     padding: 1rem .5rem;
 
@@ -132,11 +141,10 @@ body {
 
     @media screen and (min-width: 700px) {
         flex-direction: row;
+        justify-content: center;
         align-items: center;
-
         padding: 1rem 1.5rem;
         margin-top: .8rem;
-        
     }
 
     .header__top {
@@ -145,7 +153,7 @@ body {
         align-items: center;
 
         @media screen and (min-width: 700px) {
-            display: contents;
+            gap: 2.5rem;
         }
     }
 
@@ -227,10 +235,6 @@ body {
     /* Child 3 - Link to contact*/
     #nav__contact {
         margin-top: -.2rem;
-
-        @media screen and (min-width: 700px) {
-            margin-left: auto;
-        }
     }
 }
 
@@ -249,7 +253,8 @@ body {
         flex-direction: row;
         flex-wrap: wrap;
         color: var(--primary-color);
-        margin: 0 2.5rem;
+        margin-top: 0;
+        margin-left: 2.5rem;
         opacity: 1;
         max-height: none;
         overflow: visible;
