@@ -540,10 +540,18 @@ body {
     }
 
     section {
-        position: relative;
         display: grid;
         grid-template-columns: 1fr auto 1fr;
         align-items: center;
+
+        .side__left {
+            min-width: 8rem;
+        }
+
+        .side__right {
+            margin: 2rem 0;
+            min-width: 8rem;
+        }
 
         .timeline {
             grid-column: 2;
@@ -589,10 +597,6 @@ body {
         &:nth-of-type(even) .side__right{
             grid-row: 1;
             grid-column: 1;
-        }
-        
-        .side__right {
-            margin: 2rem 0;
         }
     }
     
