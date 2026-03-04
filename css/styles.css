@@ -344,8 +344,8 @@ body {
         justify-content: center;
         margin-top: 1.2rem;
 
-        @media screen and (min-width: 700px) {
-            max-width: 350px;
+        @media screen and (min-width: 760px) {
+            width: 350px;
             margin: auto;
         }
 
@@ -368,6 +368,40 @@ body {
 
     article {
         padding: 2rem 2.5rem;
+    }
+}
+
+/******** IMAGES CAROUSEL ********/
+.carousel {
+    position: relative;
+    
+    margin: auto;
+
+    .btn {
+        position: absolute;
+        z-index: 100;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .prev {
+        left: 10px;
+    }
+    .next {
+        right: 10px;
+    }
+}
+
+.contenedor {
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+
+    img {
+        
     }
 }
 
@@ -407,8 +441,6 @@ body {
         border-radius: 5px;
         margin-bottom: 2rem;
         padding: 1.5rem;
-
-        
 
         img {
             border-radius: 5px;
@@ -512,13 +544,13 @@ body {
         display: grid;
         grid-template-columns: 1fr auto 1fr;
         align-items: center;
-        gap: 1.5rem;
 
         .timeline {
             grid-column: 2;
             position: relative;
-            height: 100%;
             width: 2px;
+            height: 100%;
+            margin: 0 1rem;
             background-color: var(--primary-color);
 
             .imgeducation {
@@ -568,6 +600,7 @@ body {
 
 /******** ABOUT ME ********/
 .about__me {
+    margin-top: 2rem;
     padding: 1.5rem;
     background-color: var(--background-section);
     box-shadow: 0 2px 8px rgba(0,0,0,0.04);
