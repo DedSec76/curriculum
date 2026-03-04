@@ -18,7 +18,6 @@ export function imagesCarousel() {
 
     let index = 0
     const total = images.length
-    console.log(images[0].dataset)
 
     // Función para actualizar la posición del carrusel
 
@@ -44,4 +43,35 @@ export function imagesCarousel() {
         if(index < 0) index = total - 1
         updateCarousel()
     })
+}
+
+export function scrollToSection() {
+    const nav = document.querySelector(".navigation")
+    
+    nav.addEventListener("click", (e) => {
+        const anchor = e.target.closest("a")
+        if(!anchor) return
+        
+        e.preventDefault()
+
+        const article = document.getElementById(anchor.dataset.name)
+        if(!article) return
+            
+        window.scrollTo({
+            top: article.offsetTop - 130,
+            behavior: "smooth"
+        })
+    })
+    /*
+    anchors.forEach(a => {
+        a.addEventListener("click", (e) => {
+            e.preventDefault()
+            const article = document.getElementById(a.dataset.name)
+
+            if(!article) return
+            
+            scrollTo(0, (article.offsetTop - 130))
+            
+        })
+    })*/
 }

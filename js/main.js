@@ -1,6 +1,7 @@
-import { toggleMenu, imagesCarousel } from './ui.mjs';
+import { toggleMenu, imagesCarousel, scrollToSection } from './ui.mjs';
 
 document.addEventListener('DOMContentLoaded', () => {
     toggleMenu();
     imagesCarousel();
+    scrollToSection();
 });
