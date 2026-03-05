@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Detalles sobre mi experiencia en desarrollo de software">
+    <meta name="author" content="Aldair Rutte Bazán">
+    <link rel="icon" type="image/x-icon" href="/assets/logos/favicon.png">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lavishly+Yours&display=swap" rel="stylesheet">
+    
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <script type="module" src="js/projects.js"></script>
+
+    <title>Portfolio Web - Aldair Rutte</title>
+</head>
+<body>
+    <header class="projects_header">
+        <div class="container__header">
+            <div class="header__top">
+                <a href="/" id="logo__link">
+                    <svg class="hexagon" 
+                        xmlns="http://www.w3.org/2000/svg"  
+                        viewBox="0 0 24 24" 
+                        fill="currentColor" 
+                        stroke="currentColor" 
+                        stroke-width="1">
+                                                    
+                        <path d="M12,24c-.5,0-1-.12-1.46-.37l-7.97-4.27c-.98-.52-1.58-1.54-1.58-2.64V7.26c0-1.11,.61-2.12,1.59-2.65L10.55,.36c.91-.49,1.99-.49,2.9,0l7.96,4.25c.98,.52,1.59,1.54,1.59,2.65v9.46c0,1.11-.61,2.12-1.58,2.64l-7.96,4.27c-.46,.24-.96,.37-1.46,.37Z"/>           
+                    </svg>
+                    <span id="logo__dedsec">DS</span>
+                </a>
+                <button id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+            </div>
+
+            <nav class="navigation">
+                <a href="certificates.html">Certificados</a>
+            </nav>
+    </header>
+    <main>
+        <h1>Proyectos</h1>
+    </main>
+    <footer class="main-footer">
+        <div class="container">
+            <section class="contact__me" id="contact__me">
+                <h2>Contactarme</h2>
+
+                <form class="frmContact" action="https://formsubmit.co/rrutteba@ucvvirtual.edu.pe" method="POST">
+                    <input type="text" name="nombre" id="name" placeholder="Nombre Completo" required>
+                    <input type="email" name="email" id="email" placeholder="Correo Electrónico" required>
+                    <textarea id="message" name="message" placeholder="Mensaje" required></textarea>
+                    <button class="btn" type="submit">Enviar Mensaje</button>
+                </form>
+            </section>
+            <section class="footer__icons">
+                <ul class="list__social">
+                    <li><a href="https://github.com/DedSec76" target="_blank"><figure><img src="assets/logos/github-link.png" alt=""></figure></a></li>
+                    <li><a href="https://www.linkedin.com/in/aldair-rutte-bazan-87b2b730b" target="_blank"><figure><img src="assets/logos/linkedin.png" alt=""></figure></a></li>
+                    <li><a href="https://www.tiktok.com/@dedkaizen" target="_blank"><figure><img src="assets/logos/tik-tok.png" alt=""></figure></a></li>
+                </ul>
+            </section>
+        </div>
+        <div class="foot">
+            <p>&copy; <span id="year"></span>Diseñado y programado por Aldair Rutte Bazán.</p>
+            <p>Portfolio Web <span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+</html>

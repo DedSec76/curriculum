@@ -559,7 +559,7 @@ body {
             position: relative;
             width: 2px;
             height: 100%;
-            margin: 0 1rem;
+            margin: 0 1.5rem;
             background-color: var(--primary-color);
 
             .imgeducation {
@@ -751,6 +751,24 @@ body {
 
         &:hover {
             background-color: var(--accent-color);
+        }
+    }
+}
+
+
+/******** PROJECTS PAGE ********/
+.projects_header {
+    padding: 1rem 1.5rem;
+
+    .container__header {
+        margin: 0;
+        position: static;
+        transform: none;
+        width: 100%;
+        height: auto;
+
+        .navigation {
+            position: static;
         }
     }
 }

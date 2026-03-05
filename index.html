@@ -25,7 +25,7 @@
                 
             <div class="container__header">
                 <div class="header__top">
-                    <a href="#" id="logo__link">
+                    <a href="/" id="logo__link">
                         <svg class="hexagon" 
                             xmlns="http://www.w3.org/2000/svg"  
                             viewBox="0 0 24 24" 
@@ -78,23 +78,21 @@
             <article id="projects" class="projects">
                 <h2>Proyectos</h2>
                 <div class="projects__list">
-                    
                     <section class="card_project">
-                        <!-- <a class="project_link" href="#" target="_blank">-->
-                            <div class="carousel">
-                                <button type="button" class="btn prev">&#10094;</button>
+                        <div class="carousel">
+                            <button type="button" class="btn prev">&#10094;</button>
 
-                                <div class="contenedor">
-                                    <div class="slides">
-                                        <img data-tag="devwebcamp" src="assets/images/projects/DevwebcampInicio.PNG" alt="project-image">
-                                        <img data-tag="devwebcamp" src="assets/images/projects/DevwebcampGrafico.PNG" alt="project-image2">
-                                        <img data-tag="devwebcamp" src="assets/images/projects/DevwebcampAdmin.PNG" alt="project-image3">
-                                    </div>
+                            <div class="contenedor">
+                                <div class="slides">
+                                    <img data-tag="devwebcamp" src="assets/images/projects/DevwebcampInicio.PNG" alt="project-image">
+                                    <img data-tag="devwebcamp" src="assets/images/projects/DevwebcampGrafico.PNG" alt="project-image2">
+                                    <img data-tag="devwebcamp" src="assets/images/projects/DevwebcampAdmin.PNG" alt="project-image3">
                                 </div>
-
-                                <button type="button" class="btn next">&#10095;</button>
                             </div>
-                            <h3>Sistema de conferencias con pago en Paypal</h3>
+
+                            <button type="button" class="btn next">&#10095;</button>
+                        </div>
+                        <h3>Sistema de conferencias con pago en Paypal</h3>
                         
                         <ul class="technology__list">
                             <li><figure><img src="assets/logos/html.png" alt="html logo"></figure><figcaption>HTML</figcaption></li>
@@ -134,9 +132,8 @@
                         </ul>
                         <button class="btn">Detalles</button>
                     </section>
-                    
                 </div>
-                <a class="btn btn_more" href="#">Más Proyectos</a>
+                <a class="btn btn_more" href="projects.html">Más Proyectos</a>
             </article>
 
             <article id="education" class="education">
@@ -266,7 +263,7 @@
                             a poder aprender lenguajes robustos y modernos como: Python,
                             C#, framework como NodeJS capacitandome en el Frontend.
                         </p>
-                        <a class="btn" href="#">Ver Certificados</a>
+                        <a class="btn" href="certificates.html">Ver Certificados</a>
                         <p></p>
                         <p>Algunos conocimientos logrados sobre el Desarrollo Web: </p>
                         <ul>
@@ -290,7 +287,8 @@
             <section class="contact__me" id="contact__me">
                 <h2>Contactarme</h2>
 
-                <form action="https://formsubmit.co/rrutteba@ucvvirtual.edu.pe" method="POST">
+                <form class="frmContact" >
+                    <input type="hidden" name="_captcha" value="false">
                     <input type="text" name="nombre" id="name" placeholder="Nombre Completo">
                     <input type="email" name="email" id="email" placeholder="Correo Electrónico">
                     <textarea id="message" name="message" placeholder="Mensaje"></textarea>
@@ -310,6 +308,5 @@
             <p>Portfolio Web <span id="lastModified"></span></p>
         </div>
     </footer>
-    
 </body>
 </html>

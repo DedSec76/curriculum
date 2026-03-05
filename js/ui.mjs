@@ -11,37 +11,32 @@ export function toggleMenu() {
 }
 
 export function imagesCarousel() {
-    const slides = document.querySelector(".slides")
-    const images = document.querySelectorAll(".slides img")
-    const btnPrev = document.querySelector(".prev")
-    const btnNext = document.querySelector(".next")
+    const projects = document.querySelector(".projects__list")
 
-    let index = 0
-    const total = images.length
+    if(!projects) return
 
-    // Función para actualizar la posición del carrusel
+    projects.addEventListener("click", (e) => {
+        const carousel = e.target.closest(".carousel")
+        if (!carousel) return
 
-    function updateCarousel() {
-        images.forEach(img => {
-            console.log(images.length)
-            if(img.dataset.tag === "devwebcamp") {
-                total = images.length
-                slides.style.transform = `translateX(-${index * img.width}px)`
-            }
-        })
-    }
+        const slides = carousel.querySelector(".slides")
+        const imgs = carousel.querySelectorAll("img")
+
+        let index = Number(carousel.dataset.index) || 0  // Asignamos un dataset index
+        let imgTotal = imgs.length                       // en caso de que no exista se define 0
         
+        if(e.target.classList.contains("next")) {
+            index++
+            if(index >= imgTotal) index = 0
+        }
 
-    btnNext.addEventListener("click", () => {
-        index++
-        if(index >= total) index = 0
-        updateCarousel()
-    })
+        if(e.target.classList.contains("prev")) {   // se declara un if para ver si el usuario da click
+            index--                                 // en next o prev
+            if (index < 0) index = imgTotal - 1
+        }
 
-    btnPrev.addEventListener("click", () => {
-        index--
-        if(index < 0) index = total - 1
-        updateCarousel()
+        slides.style.transform = `translateX(-${index * imgs[0].width}px)`  // se usa la misma imagen ya que todos tienen el mismo ancho (width)
+        carousel.dataset.index = index              // se le asigna a ese dataset el valor de index
     })
 }
 
@@ -62,16 +57,40 @@ export function scrollToSection() {
             behavior: "smooth"
         })
     })
-    /*
-    anchors.forEach(a => {
-        a.addEventListener("click", (e) => {
-            e.preventDefault()
-            const article = document.getElementById(a.dataset.name)
+}
 
-            if(!article) return
-            
-            scrollTo(0, (article.offsetTop - 130))
-            
+export function validateForm() {
+    const frm = document.querySelector(".frmContact")
+
+    frm.addEventListener("submit", (e) => {
+        e.preventDefault()
+        
+        if(!frm.name.value.trim()) {
+            alert("el nombre no debe ir vacio")
+            return
+        }
+        if(!frm.email.value.includes("@")) {
+            alert("Email Inválido")
+            return
+        }
+        if(!frm.message.value.trim()) {
+            alert("el message no debe ir vacio")
+            return
+        }
+        submitForm(frm)
+    })
+
+    function submitForm(frm) {
+        const formData = new FormData(frm)
+
+        fetch("https://formsubmit.co/rrutteba@ucvvirtual.edu.pe", {
+            method: "POST",
+            body: formData
         })
-    })*/
+        .then(() => {
+            alert("Mensaje Enviado Correctamente")
+            frm.reset()
+        })
+        .catch(() => alert("No se pudo enviar tu mensaje"))
+    }
 }
