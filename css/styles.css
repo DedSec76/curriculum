@@ -368,6 +368,10 @@ body {
 .principal {
 
     article {
+        padding: 2rem 1rem;
+    }
+
+    @media screen and (min-width: 700px){
         padding: 2rem 2.5rem;
     }
 }
