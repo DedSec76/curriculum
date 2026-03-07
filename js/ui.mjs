@@ -94,3 +94,66 @@ export function validateForm() {
         .catch(() => alert("No se pudo enviar tu mensaje"))
     }
 }
+
+export function renderTemplateProject(project) {
+    return `<section class="card_project">
+                <div class="carousel">
+                    <button type="button" class="btn prev">&#10094;</button>
+
+                    <div class="contenedor">
+                        <div class="slides">
+                            <img src="${project.images[0]}" alt="image of ${project.name}">
+                            <img src="${project.images[1]}" alt="image of ${project.name}">
+                            <img src="${project.images[2]}" alt="image of ${project.name}">
+                        </div>
+                    </div>
+
+                    <button type="button" class="btn next">&#10095;</button>
+                </div>
+
+                <h3>${project.name}</h3>
+                        
+                <ul class="technology__list">
+                    <li><figure><img src="${project.img_technology[0]}" alt="image of ${project.technology[0]}"></figure><figcaption>${project.technology[0]}</figcaption></li>
+                    <li><figure><img src="${project.img_technology[1]}" alt="image of ${project.technology[1]}"></figure><figcaption>${project.technology[1]}</figcaption></li>
+                    <li><figure><img src="${project.img_technology[2]}" alt="image of ${project.technology[2]}"></figure><figcaption>${project.technology[2]}</figcaption></li>
+                    <li><figure><img src="${project.img_technology[3]}" alt="image of ${project.technology[3]}"></figure><figcaption>${project.technology[3]}</figcaption></li>
+                    <li><figure><img src="${project.img_technology[4]}" alt="image of ${project.technology[4]}"></figure><figcaption>${project.technology[4]}</figcaption></li>
+                </ul>
+                <button data-id="${project.id}" class="btn">Detalles</button>
+                <div class="details">
+                    <a href="${project.url}" target="_blank">Ver Demo</a>
+                    <p>${project.description}</p>
+                </div>
+            </section>`
+}
+
+export function renderListWithTemplate({parentElement, list, clear=false}) {
+    const htmlStrings = list.map(p => renderTemplateProject(p)).join("")
+
+    if(clear) {
+        parentElement.innerHTML = ""
+    }
+
+    parentElement.insertAdjacentHTML("afterbegin", htmlStrings)
+}
+
+export function ShowDetails() {
+    const containerList = document.querySelector(".projects__list")
+    if(!containerList) return
+
+    containerList.addEventListener("click", (e) => {
+
+        const btnDetails = e.target.closest("[data-id]")
+        if(!btnDetails) return
+
+
+        const cardProject = btnDetails.closest(".card_project")
+        if(!cardProject) return
+
+        const detailsDiv = cardProject.querySelector(".details")
+        if(!detailsDiv) return
+        
+        detailsDiv.classList.toggle("show")
+    })
+}
