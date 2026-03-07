@@ -6,7 +6,7 @@ export default class ProjectListing {
     }
 
     async init() {
-        const data = await fetch("../data/projects.json")
+        const data = await fetch("data/projects.json")
         this.projects = await data.json()
         
         this.renderProjects()
