@@ -782,9 +782,14 @@ body {
 }
 
 .projects_main {
-    padding: 0 1.5rem;
+    box-shadow: -3px 3px 10px rgba(0, 0, 0, 0.626);
+    border-radius: 5px;
+    background-color: var(--background-section);
+    margin: 2rem 1.5rem;
+    padding: 1.5rem;
 
     h1 {
+        margin: 0 0 1.5rem;
         text-align: center;
     }
 }
@@ -807,5 +812,71 @@ body {
 
     &.show {
         display: block;
+    }
+}
+
+/******** CERTIFICATES PAGE ********/
+.hd_certi {
+    max-width: 1200px !important;
+    margin: auto;
+}
+
+.board {
+    background: linear-gradient(rgba(137, 137, 137, 0.1),rgba(0, 0, 0, 0.2)),url(../assets/images/certificate/background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    h1 {
+        text-align: center;
+        margin: -.4rem 0 1.5rem;
+        padding-top: 1rem;
+        color: var(--background-body);
+    }
+}
+
+.certificates {
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem 0 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+
+    @media screen and (min-width: 700px){
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.bg_certificate {
+    position: relative;
+    max-width: 400px;
+    margin: auto;
+
+    img {
+        filter: brightness(.6);
+        width: 100%;
+    }
+}
+
+.certificate_content {
+    position: absolute;
+    top: 12%;
+    text-align: center;
+    
+    button {
+        display: block;
+        margin-left: 12%;
+    }
+
+    img {
+        filter: brightness(.9);
+        width: 44%;
+        min-height: 198px;
+    }
+
+    h3 {
+        margin-top: .2rem;
+        color: var(--background-body);
     }
 }
