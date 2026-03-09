@@ -12,6 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lavishly+Yours&display=swap" rel="stylesheet">
     
     <!-- CSS Styles -->
+    <link rel="preload" as="image" href="assets/images/programing-background.webp">
+
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/normalize.css">
     <script type="module" src="js/main.js"></script>
@@ -38,7 +40,7 @@
                         <span id="logo__dedsec">DS</span>
                     </a>
 
-                    <button id="hamburger">
+                    <button id="hamburger" aria-label="button mobile">
                         <span></span>
                         <span></span>
                         <span></span>
@@ -58,15 +60,15 @@
             <div class="header__content">
                 <h1>Hola! Soy Aldair Rutte Bazán</h1>
                 <ul class="list__social">
-                    <li><a href="https://github.com/DedSec76" target="_blank"><figure><img src="assets/logos/github-link.png" alt=""></figure></a></li>
-                    <li><a href="https://www.linkedin.com/in/aldair-rutte-bazan-87b2b730b" target="_blank"><figure><img src="assets/logos/linkedin.png" alt=""></figure></a></li>
-                    <li><a href="https://www.tiktok.com/@dedkaizen" target="_blank"><figure><img src="assets/logos/tik-tok.png" alt=""></figure></a></li>
+                    <li><a aria-label="Visit my github to see more about my work" href="https://github.com/DedSec76" target="_blank"><figure><img src="assets/logos/github-link.png" alt=""></figure></a></li>
+                    <li><a aria-label="Visit my Linkedin to see my corporate profile" href="https://www.linkedin.com/in/aldair-rutte-bazan-87b2b730b" target="_blank"><figure><img src="assets/logos/linkedin.png" alt=""></figure></a></li>
+                    <li><a aria-label="Visit my tiktok to see demos and videos about my projects" href="https://www.tiktok.com/@dedkaizen" target="_blank"><figure><img src="assets/logos/tik-tok.png" alt=""></figure></a></li>
                 </ul>
                 <p>Tengo 2 años de experiencia desarrollando aplicaciones web, para empresas y proyectos personales. Actualmente
                 me encuentro estudiando Software Development en BYU–Idaho, he participado en trabajos colaborativo mediante Git y metodologías ágiles.
                 </p>
 
-                <h4>- Inglés Intermedio</h4>
+                <span id="language">- Inglés Intermedio</span>
             
                 <a href="assets/C.V.Aldair-Rutte-Web-Developer.pdf" class="btn btn_download" download><img src="assets/logos/cv.png" alt="icon cv"> Download CV</a>
             </div>
@@ -84,9 +86,9 @@
 
                             <div class="contenedor">
                                 <div class="slides">
-                                    <img data-tag="devwebcamp" src="assets/images/projects/devwebcamp/DevwebcampInicio.webp" alt="project-image">
-                                    <img data-tag="devwebcamp" src="assets/images/projects/devwebcamp/DevwebcampGrafico.webp" alt="project-image2">
-                                    <img data-tag="devwebcamp" src="assets/images/projects/devwebcamp/DevwebcampAdmin.webp" alt="project-image3">
+                                    <img src="assets/images/projects/devwebcamp/DevwebcampInicio-mobile.webp" alt="project-image">
+                                    <img src="assets/images/projects/devwebcamp/DevwebcampGrafico-mobile.webp" alt="project-image2">
+                                    <img src="assets/images/projects/devwebcamp/DevwebcampAdmin-mobile.webp" alt="project-image3">
                                 </div>
                             </div>
 
@@ -111,11 +113,31 @@
                             <button type="button" class="btn prev">&#10094;</button>
 
                             <div class="contenedor">
-                                <div class="slides" data-name="compareready">
-                                    <img src="assets/images/projects/compareReady/ComparereadyInicio.webp" alt="project-compare-inicio">
-                                    <img src="assets/images/projects/compareReady/ComparereadyCompare1.webp" alt="project-compare-1">
-                                    <img src="assets/images/projects/compareReady/ComparereadyCompare2.webp" alt="project-compare-2">
-                                    <img src="assets/images/projects/compareReady/ComparereadyCompareFinish.webp" alt="project-compare-finish">
+                                <div class="slides">
+                                    <img 
+                                        src="assets/images/projects/compareReady/ComparereadyInicio-mobile.webp" 
+                                        srcset="assets/images/projects/compareReady/ComparereadyInicio-mobile.webp 1x
+                                                assets/images/projects/compareReady/ComparereadyInicio.webp 2x
+                                        "
+                                        alt="project-compare-inicio">                                                                                                            
+                                    <img 
+                                        src="assets/images/projects/compareReady/ComparereadyCompare1-mobile.webp" 
+                                        srcset="assets/images/projects/compareReady/ComparereadyCompare1-mobile.webp 1x
+                                                assets/images/projects/compareReady/ComparereadyCompare1.webp 2x
+                                        "
+                                        alt="project-compare-1">                                                                                                              
+                                    <img 
+                                        src="assets/images/projects/compareReady/ComparereadyCompare2-mobile.webp" 
+                                        srcset="assets/images/projects/compareReady/ComparereadyCompare2-mobile.webp 1x
+                                                assets/images/projects/compareReady/ComparereadyCompare2.webp 2x
+                                        "
+                                        alt="project-compare-2">                                       
+                                    <img 
+                                        src="assets/images/projects/compareReady/ComparereadyCompareFinish-mobile.webp" 
+                                        srcset="assets/images/projects/compareReady/ComparereadyCompareFinish-mobile.webp 1x
+                                                assets/images/projects/compareReady/ComparereadyCompareFinish.webp 2x
+                                        "
+                                        alt="project-compare-finish">
                                 </div>
                             </div>
 
@@ -141,7 +163,7 @@
 
                 <section class="education__current">
                     <div class="side__left">
-                        <h4>Desarrollo de Software</h4>
+                        <h3>Desarrollo de Software</h3>
                         <p>Octubre 2024 - Actualmente | BYU</p>
                     </div>
                     <div class="timeline">
@@ -157,7 +179,7 @@
                 </section>
                 <section class="education__past">
                     <div class="side__left">
-                        <h4>Redes y Conectividad</h4>
+                        <h3>Redes y Conectividad</h3>
                         <p>Julio 2025 - Septiembre 2025 | Fundet</p>
                     </div>
                     <div class="timeline">
@@ -172,7 +194,7 @@
                 </section>
                 <section class="education__ancestor">
                     <div class="side__left">
-                        <h4>Ingeniería de Software</h4>
+                        <h3>Ingeniería de Software</h3>
                         <p>Abril 2017 - Octubre 2021 (8vo ciclo) | Universidad Cesar Vallejo</p>
                     </div>
                     <div class="timeline">
@@ -187,7 +209,7 @@
                 </section>
                 <section class="education__beancestor">
                     <div class="side__left">
-                        <h4>Ensamblaje de Computadoras</h4>
+                        <h3>Ensamblaje de Computadoras</h3>
                         <p>Marzo 2015 - Octubre 2015 | Instituto La Católica</p>
                     </div>
                     <div class="timeline">
@@ -205,7 +227,7 @@
             <article id="technology" class="main__stack">
                 <h2>Tecnología Principal</h2>
                 <section class="frontend">
-                    <h4>Frontend</h4>
+                    <h3>Frontend</h3>
                     <ul>
                         <li><figure><img src="assets/logos/html.png" alt="html logo"></figure><figcaption>HTML</figcaption></li>
                         <li><figure><img src="assets/logos/css-3.png" alt="css logo"></figure><figcaption>CSS</figcaption></li>
@@ -213,7 +235,7 @@
                     </ul>
                 </section>
                 <section class="backend">
-                    <h4>Backend</h4>
+                    <h3>Backend</h3>
                     <ul>
                         <li><figure><img src="assets/logos/php.png" alt="html logo"></figure><figcaption>PHP</figcaption></li>
                         <li><figure><img src="assets/logos/python.png" alt="html logo"></figure><figcaption>PYTHON</figcaption></li>
@@ -222,7 +244,7 @@
                     </ul>
                 </section>
                 <section class="others">
-                    <h4>Otras Tecnologías</h4>
+                    <h3>Otras Tecnologías</h3>
                     <ul>
                         <li><figure><img src="assets/logos/git.png" alt="git logo"></figure><figcaption>GIT</figcaption></li>
                         <li><figure><img src="assets/logos/github.png" alt="github logo"></figure><figcaption>GITHUB</figcaption></li>
@@ -234,7 +256,7 @@
                     </ul>
                 </section>
                 <section class="office">
-                    <h4>Office</h4>
+                    <h3>Office</h3>
                     <ul>
                         <li><figure><img src="assets/logos/word.png" alt="word logo"></figure><figcaption>WORD</figcaption></li>
                         <li><figure><img src="assets/logos/excel.png" alt="excel logo"></figure><figcaption>EXCEL</figcaption></li>
@@ -297,9 +319,9 @@
             </section>
             <section class="footer__icons">
                 <ul class="list__social">
-                    <li><a href="https://github.com/DedSec76" target="_blank"><figure><img src="assets/logos/github-link.png" alt=""></figure></a></li>
-                    <li><a href="https://www.linkedin.com/in/aldair-rutte-bazan-87b2b730b" target="_blank"><figure><img src="assets/logos/linkedin.png" alt=""></figure></a></li>
-                    <li><a href="https://www.tiktok.com/@dedkaizen" target="_blank"><figure><img src="assets/logos/tik-tok.png" alt=""></figure></a></li>
+                    <li><a aria-label="Visit my github to see more about my work" href="https://github.com/DedSec76" target="_blank"><figure><img src="assets/logos/github-link.png" alt=""></figure></a></li>
+                    <li><a aria-label="Visit my Linkedin to see my corporate profile" href="https://www.linkedin.com/in/aldair-rutte-bazan-87b2b730b" target="_blank"><figure><img src="assets/logos/linkedin.png" alt=""></figure></a></li>
+                    <li><a aria-label="Visit my tiktok to see demos and videos about my projects" href="https://www.tiktok.com/@dedkaizen" target="_blank"><figure><img src="assets/logos/tik-tok.png" alt=""></figure></a></li>
                 </ul>
             </section>
         </div>

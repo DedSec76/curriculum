@@ -328,7 +328,9 @@ body {
         max-width: 600px;
     }
 
-    h4 {
+    #language {
+        display: block;
+        font-weight: bold;
         letter-spacing: -0.2px;
         text-align: left;
         color: var(--background-body);
@@ -792,6 +794,10 @@ body {
         margin: 0 0 1.5rem;
         text-align: center;
     }
+
+    h2 {
+        margin: 0 0 1.5rem;
+    }
 }
 
 .details {
@@ -872,10 +878,11 @@ body {
     img {
         filter: brightness(.9);
         width: 44%;
-        min-height: 198px;
+        min-height: 196px;
     }
 
-    h3 {
+    h2 {
+        font-size: var(--font-size-h3);
         margin-top: .2rem;
         color: var(--background-body);
     }
