@@ -6,8 +6,7 @@ export function toggleMenu() {
     hamburger.addEventListener('click', () => {
         hamburger.classList.toggle('active');
         navigation.classList.toggle('active');
-    }
-    );
+    });
 }
 
 export function imagesCarousel() {

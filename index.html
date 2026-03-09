@@ -10,18 +10,28 @@
     <link rel="icon" type="image/x-icon" href="assets/logos/favicon.png">
     
     <!-- Google Fonts -->
-    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lavishly+Yours&display=swap" rel="stylesheet">
+
+    <link rel="preload" as="style"
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lavishly+Yours&display=swap"
+    onload="this.rel='stylesheet'">
+
+    <noscript>
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lavishly+Yours&display=swap">
+    </noscript>
     
     <!-- Preload hero image -->
     <link rel="preload" as="image" href="assets/images/programing-background.webp" fetchpriority="high">
 
     <!-- CSS Styles -->
     <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="preload" href="css/styles.css" as="style" onload="this.rel='stylesheet'">
+    <noscript>
     <link rel="stylesheet" href="css/styles.css">
+    </noscript>
     
     <!-- Scripts JS -->
     <script type="module" src="js/main.js"></script>
