@@ -59,8 +59,10 @@ export function scrollToSection() {
         const article = document.getElementById(anchor.dataset.name)
         if(!article) return
             
+        const top = article.getBoundingClientRect().top + window.scrollY - 130
+
         window.scrollTo({
-            top: article.offsetTop - 130,
+            top,
             behavior: "smooth"
         })
     })
