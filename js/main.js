@@ -1,18 +1,34 @@
-import { toggleMenu, imagesCarousel, scrollToSection, validateForm, renderListWithTemplate } from './ui.mjs';
+import { toggleMenu, imagesCarousel, scrollToSection, validateForm, ShowDetails, showFooter, renderListWithTemplate } from './ui.mjs';
 
-document.addEventListener('DOMContentLoaded', () => {
+init(); 
+
+async function init() {
     toggleMenu();
     imagesCarousel();
     scrollToSection();
-    validateForm()
-});
+    validateForm();
+    ShowDetails();
+    showFooter()
 
-const data = await fetch("data/projects.json")
-const projects = await data.json()
+    try {
+        const response = await fetch("data/projects.json")
 
-const parentElement = document.querySelector(".projects__list")
+        if(!response.ok) {
+            throw new Error("Network response was not ok")
+        }
+        
+        const projects = await response.json()
+        const only2 = projects.slice(0, 2)
 
-renderListWithTemplate({
-                        parentElement: parentElement, 
-                        list: projects
-})
+        const parentElement = document.querySelector(".projects__list")
+
+        renderListWithTemplate({
+                                parentElement: parentElement, 
+                                list: only2
+
+        })
+
+    } catch (error) {
+        console.error("Error loading projects: ", error)
+    }
+}

@@ -9,6 +9,14 @@ export function toggleMenu() {
     });
 }
 
+export function showFooter() {
+    const date = new Date
+    const year = document.getElementById("year")
+    year.textContent = `${date.getFullYear()} `
+
+    document.getElementById("lastModified").textContent = document.lastModified
+}
+
 export function imagesCarousel() {
     const projects = document.querySelector(".projects__list")
 

@@ -1,4 +1,5 @@
-import { toggleMenu } from "./ui.mjs"
+import { toggleMenu, showFooter } from "./ui.mjs"
 
 
 toggleMenu()
+showFooter()

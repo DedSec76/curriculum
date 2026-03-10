@@ -1,4 +1,4 @@
-import { toggleMenu, imagesCarousel, ShowDetails } from "./ui.mjs"
+import { toggleMenu, imagesCarousel, ShowDetails, validateForm, showFooter } from "./ui.mjs"
 import ProjectListing from "./Projects-listing.mjs"
 
 
@@ -11,3 +11,5 @@ projects.init()
 
 imagesCarousel()
 ShowDetails()
+validateForm()
+showFooter()
