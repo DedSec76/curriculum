@@ -111,9 +111,9 @@ export function renderTemplateProject(project) {
 
                     <div class="contenedor">
                         <div class="slides">
-                            <img src="${project.images[0]}" alt="image of ${project.name}">
-                            <img src="${project.images[1]}" alt="image of ${project.name}">
-                            <img src="${project.images[2]}" alt="image of ${project.name}">
+                            <img loading="lazy" src="${project.images[0]}" alt="image of ${project.name}" width:"600" height="447">
+                            <img loading="lazy" src="${project.images[1]}" alt="image of ${project.name}" width:"600" height="447">
+                            <img loading="lazy" src="${project.images[2]}" alt="image of ${project.name}" width:"600" height="447">
                         </div>
                     </div>
 
