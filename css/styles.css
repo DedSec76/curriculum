@@ -1132,6 +1132,7 @@ body {
         height: auto;
 
         .navigation {
+            min-height: 0;
             position: static;
         }
     }
