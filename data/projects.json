@@ -16,9 +16,9 @@
     },
     {
         "id": 2,
-        "images": ["assets/images/projects/compareReady/ComparereadyInicio.webp",
-                   "assets/images/projects/compareReady/ComparereadyCompare2.webp",
-                  "assets/images/projects/compareReady/ComparereadyCompareFinish.webp"],
+        "images": ["assets/images/projects/admindashboard/admindashboard1.png",
+                   "assets/images/projects/admindashboard/admindashboard2.png",
+                   "assets/images/projects/admindashboard/admindashboard3.png"],
         "name": "Panel de Administración de Productos",
         "technology" : ["REACT", "TAILWINDCSS", "SUPABASE", "ZOD", "GITHUB"],
         "img_technology": ["assets/logos/react.png",
