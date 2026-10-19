@@ -34,6 +34,28 @@
     },
     {
         "id": 3,
+        "images": ["assets/images/projects/csemotors/csemotors1.png",
+                   "assets/images/projects/csemotors/csemotors2.png",
+                   "assets/images/projects/csemotors/csemotors3.png"],
+        "name": "CSE Motors - Concesionario de Autos",
+        "technology" : ["NODE JS", "EXPRESS", "JAVASCRIPT", "POSTGRESQL", "CSS"],
+        "img_technology": ["assets/logos/node.svg",
+                           "assets/logos/expressjs.png",
+                           "assets/logos/java-script.png",
+                           "assets/logos/postgre.png",
+                           "assets/logos/css-3.png"],
+        "description" : ["CSE Motors es un Concecionario de Autos aplicación web full stack que implementa: ",
+                         "- Autenticación segura, control de acceso por roles y administración dinámica de contenido.",
+                         "- La autenticación es mediante JWT y protección de rutas con middleware.",
+                         "- Sistema de autorización basado en roles (Client/Admin).",
+                         "- Cada usuario puede registrarse, iniciar sesión y editar dinámicamente su perfil.",
+                         "- El sistema de reseñas dinámicas asociado a vehículos.",
+                         "- Panel administrativo para gestión de vehículos y categorías mediante operaciones CRUD.",
+                         "- Validaciones de datos y manejo de errores utilizando Express Validator."],
+        "url": "https://cse340service-25aq.onrender.com/"
+    },
+    {
+        "id": 4,
         "images": ["assets/images/projects/compareReady/ComparereadyInicio.webp",
                    "assets/images/projects/compareReady/ComparereadyCompare2.webp",
                   "assets/images/projects/compareReady/ComparereadyCompareFinish.webp"],
@@ -51,7 +73,7 @@
         "url": "https://dedsec76.github.io/compReady/"
     },
     {
-        "id": 4,
+        "id": 5,
         "images": ["assets/images/projects/grandmaponche/grandmaPoncheInicio.webp",
                    "assets/images/projects/grandmaponche/grandmaPoncheAboutus.webp",
                   "assets/images/projects/grandmaponche/grandmaPoncheDesserts.webp"],
