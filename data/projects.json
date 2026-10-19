@@ -4,7 +4,7 @@
         "images": ["assets/images/projects/flashfinance/flashfinance1.png",
                    "assets/images/projects/flashfinance/flashfinance2.png",
                    "assets/images/projects/flashfinance/flashfinance3.png"],
-        "name": "Sistema de conferencias con pago en Paypal",
+        "name": "Sistema de Finanzas Personales - FlashFinance",
         "technology" : ["NEXT.JS", "REACT", "TYPESCRIPT", "MONGODB", "ZOD", "TAILWINDCSS"],
         "img_technology": ["assets/logos/next.jfif",
                            "assets/logos/react.png",
